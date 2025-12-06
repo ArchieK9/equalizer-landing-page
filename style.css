@@ -282,14 +282,82 @@ footer {
 }
 
 @media (max-width: 767px) {
+
+  body{
+    padding: 0rem 1.25rem 0rem;
+    background-image: url(./assets/bg-main-desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .hero>h1{
+    font-size: 40px;
+    padding: 0;
+  }
+
+  .hero>p{
+    padding: 0;
+  }
+
+  main{
+    margin: 0 -1.25rem;
+  }
+
+  .main-content{
+    background-position: center top;
+    border-radius: 0;
+    height: 23.75rem;
+    margin-top: 110px;
+  }
+
+  .img-cont{
+    left: 0;
+    bottom: 15%;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+  }
+
+  .img-cont>img{
+    width: 210px;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .cta{
+    right: 0;
+    top: 100%;
+    width: auto;
+    border-radius: 0rem;
+    padding: 3rem 1.25rem 7rem;
+  }
+
+  .cta p{
+    font-size: 16px;
+  }
+
   footer {
     grid-template-columns: 1fr;
-      grid-template-rows: auto auto auto;
-      text-align: center;
+    grid-template-rows: auto auto auto;
+    text-align: left;
+    margin-top: 554px;
+    padding: 4rem 1.25rem;
+    gap: 2rem;
+  }
+
+  .socials{
+    justify-content: start;
+    gap: 2rem;
+  }
+
+  .footer-text>p{
+    font-size: 16px;
   }
 
   footer>div {
-    flex-basis: 100%;
     width: 100%;
   }
 }
